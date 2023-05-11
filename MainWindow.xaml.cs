@@ -23,6 +23,7 @@ namespace WPF_Exel_quiz_11_05_2023_homework
         public MainWindow()
         {
             InitializeComponent();
+           
         }
 
         private void ButtonCansel_Click(object sender, RoutedEventArgs e)
@@ -34,6 +35,16 @@ namespace WPF_Exel_quiz_11_05_2023_homework
         {
             LoginParol one = new LoginParol();
             one = (LoginParol)this.DataContext;
+        }
+
+        private void TextBoxLogin_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void TextBoxParol_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

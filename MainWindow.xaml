@@ -10,12 +10,12 @@
         <StackPanel Margin="8">
             <Label FontSize="20">Регистрация и вход</Label>
             <Label FontSize="20">Логин:</Label>
-            <TextBox MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"
-                     Text="{Binding ElementName=Login, Path=Text, Mode=TwoWay}"
+            <TextBox x:Name="TextBoxLogin" MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"
+                     Text="{Binding ElementName=Login, Path=Text, Mode=TwoWay}" TextChanged="TextBoxLogin_TextChanged"
                      ></TextBox>
             <Label FontSize="20">Пароль:</Label>
-            <TextBox MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"
-                     Text="{Binding ElementName=Parol, Path=Text, Mode=TwoWay}"
+            <TextBox x:Name="TextBoxParol" MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"
+                     Text="{Binding ElementName=Parol, Path=Text, Mode=TwoWay}" TextChanged="TextBoxParol_TextChanged"
                      ></TextBox>
             
         </StackPanel>
