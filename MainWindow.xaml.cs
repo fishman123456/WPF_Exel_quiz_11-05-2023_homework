@@ -24,5 +24,16 @@ namespace WPF_Exel_quiz_11_05_2023_homework
         {
             InitializeComponent();
         }
+
+        private void ButtonCansel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ButtOk_Click(object sender, RoutedEventArgs e)
+        {
+            LoginParol one = new LoginParol();
+            one = (LoginParol)this.DataContext;
+        }
     }
 }

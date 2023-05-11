@@ -8,16 +8,24 @@
         Title="MainWindow" Height="350" Width="260" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid >
         <StackPanel Margin="8">
-            <Label FontSize="20">Контактная информация</Label>
+            <Label FontSize="20">Регистрация и вход</Label>
             <Label FontSize="20">Логин:</Label>
-            <TextBox MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"></TextBox>
+            <TextBox MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"
+                     Text="{Binding ElementName=Login, Path=Text, Mode=TwoWay}"
+                     ></TextBox>
             <Label FontSize="20">Пароль:</Label>
-            <TextBox MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"></TextBox>
+            <TextBox MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"
+                     Text="{Binding ElementName=Parol, Path=Text, Mode=TwoWay}"
+                     ></TextBox>
             
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,250,0,0" Width="250">
-            <Button Margin="10" MaxWidth="120" HorizontalAlignment="Right" FontSize="20" MinWidth="100" Content="Отправить"/>
-            <Button Margin="10" MaxWidth="120" HorizontalAlignment="Left" FontSize="20" MinWidth="100" Content="Выход"/>
+            <Button x:Name="ButtOk" Margin="10" MaxWidth="120" HorizontalAlignment="Right"
+                    FontSize="20" MinWidth="100" 
+                    Content="Отправить" Click="ButtOk_Click"/>
+            <Button x:Name="ButtCansel" Margin="10" MaxWidth="120" HorizontalAlignment="Left"
+                    FontSize="20" MinWidth="100" 
+                    Content="Выход" Click="ButtonCansel_Click"/>
         </StackPanel>
 
     </Grid>
