@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="260" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid >
+        <Image x:Name="water"  Stretch="UniformToFill" Source="/water.png"  IsEnabled="False" Opacity="0.3" />
         <StackPanel Margin="8">
             <Label FontSize="20">Регистрация и вход</Label>
             <Label FontSize="20">Логин:</Label>
@@ -17,8 +18,10 @@
             <TextBox x:Name="TextBoxParol" MaxWidth="250" MinWidth="200" HorizontalAlignment="Left" FontSize="20" Width="223"
                      Text="{Binding ElementName=Parol, Path=Text, Mode=TwoWay}" TextChanged="TextBoxParol_TextChanged"
                      ></TextBox>
-            
+
+
         </StackPanel>
+        
         <StackPanel Orientation="Horizontal" Margin="0,250,0,0" Width="250">
             <Button x:Name="ButtOk" Margin="10" MaxWidth="120" HorizontalAlignment="Right"
                     FontSize="20" MinWidth="100" 
@@ -27,6 +30,5 @@
                     FontSize="20" MinWidth="100" 
                     Content="Выход" Click="ButtonCansel_Click"/>
         </StackPanel>
-
     </Grid>
 </Window>
